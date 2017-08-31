@@ -7,6 +7,6 @@
 
 	<interceptors>
 		<class>com.gitlab.rodoufu.jsedi.cdi.ThreadScopedInterceptor</class>
-<!-- 		<class>com.gitlab.rodoufu.jsedi.cdi.TransactionInterceptor</class> -->
+		<class>com.gitlab.rodoufu.jsedi.cdi.TransactionInterceptor</class>
 	</interceptors>
 </beans>
