@@ -1,0 +1,12 @@
+<beans xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+
+	<decorators>
+		<class>org.jboss.weld.environment.se.threading.RunnableDecorator</class>
+	</decorators>
+
+	<interceptors>
+		<class>com.gitlab.rodoufu.jsedi.cdi.ThreadScopedInterceptor</class>
+<!-- 		<class>com.gitlab.rodoufu.jsedi.cdi.TransactionInterceptor</class> -->
+	</interceptors>
+</beans>

@@ -14,18 +14,12 @@
 		<weld.version>2.4.4.Final</weld.version>
 	</properties>
 
-	<artifactId>jse-di-example</artifactId>
-	<name>jse-di-example</name>
+	<artifactId>jse-di-util</artifactId>
+	<name>jse-di-util</name>
 	<url>https://gitlab.com/rodoufu/jse-di</url>
 	<packaging>jar</packaging>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.gitlab.rodoufu.jse-di</groupId>
-			<artifactId>jse-di-util</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.jboss.weld.se</groupId>
 			<artifactId>weld-se</artifactId>

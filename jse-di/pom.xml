@@ -11,5 +11,6 @@
 	<modules>
 		<module>jse-di-archetype</module>
 		<module>jse-di-example</module>
+		<module>jse-di-util</module>
 	</modules>
 </project>
