@@ -2,7 +2,7 @@
 <persistence version="2.1"
 	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="btc" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="puName" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 		<properties>
@@ -19,10 +19,10 @@
 			<property name="hibernate.c3p0.max_statements" value="50" />
 			<property name="hibernate.c3p0.idle_test_period" value="2000" />
 
-			<property name="javax.persistence.jdbc.driver" value="<DRIVER>" />
-			<property name="javax.persistence.jdbc.url" value="<URL>" />
-			<property name="javax.persistence.jdbc.user" value="<USER>" />
-			<property name="javax.persistence.jdbc.password" value="<PASSWORD>" />
+			<property name="javax.persistence.jdbc.driver" value="DRIVER" />
+			<property name="javax.persistence.jdbc.url" value="URL" />
+			<property name="javax.persistence.jdbc.user" value="USER" />
+			<property name="javax.persistence.jdbc.password" value="PASSWORD" />
 		</properties>
 	</persistence-unit>
 </persistence>

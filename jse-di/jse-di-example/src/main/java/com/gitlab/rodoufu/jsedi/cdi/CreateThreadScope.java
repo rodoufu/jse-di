@@ -11,7 +11,7 @@ import javax.interceptor.InterceptorBinding;
 @Inherited
 @InterceptorBinding
 @Retention(value = RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Target({ ElementType.TYPE, ElementType.METHOD })
 public @interface CreateThreadScope {
 
 }

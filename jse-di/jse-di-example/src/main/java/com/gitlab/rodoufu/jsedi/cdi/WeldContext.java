@@ -10,17 +10,12 @@ public class WeldContext {
 	private final WeldContainer container;
 
 	private WeldContext() {
-		this.weld = new Weld();
-		this.container = weld.initialize();
-		Runtime.getRuntime().addShutdownHook(new Thread() {
-			@Override
-			public void run() {
-				weld.shutdown();
-			}
-		});
+		weld = new Weld();
+		container = weld.initialize();
 	}
 
 	public <T> T getBean(Class<T> type) {
 		return container.select(type).get();
 	}
+
 }
