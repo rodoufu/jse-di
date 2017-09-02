@@ -87,4 +87,5 @@
 			<version>1.2</version>
 		</dependency>
 	</dependencies>
+	<description>A Java SE project using Dependency Injection</description>
 </project>

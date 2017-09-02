@@ -13,11 +13,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<groupId>com.gitlab.rodoufu.jse-di</groupId>
 	<artifactId>jse-di-archetype</artifactId>
-	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
 	<name>jse-di-archetype</name>
 	<url>https://gitlab.com/rodoufu/jse-di</url>
-	<packaging>jar</packaging>
+	<description>A Java SE project using Dependency Injection</description>
 </project>

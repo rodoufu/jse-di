@@ -11,6 +11,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.transaction.Transactional;
 
+/**
+ * Interceptor to create a transaction.
+ * @author rodoufu
+ */
 @Interceptor
 @Transactional
 public class TransactionInterceptor implements Serializable {
@@ -18,6 +22,12 @@ public class TransactionInterceptor implements Serializable {
 
 	private transient @Inject Instance<EntityManager> manager;
 
+	/**
+	 * Creates a transaction arround the method.
+	 * @param context CDI context.
+	 * @return The returned value.
+	 * @throws Exception In case of any error.
+	 */
 	@AroundInvoke
 	public Object invoke(InvocationContext context) throws Exception {
 		final EntityTransaction trx = manager.get().getTransaction();

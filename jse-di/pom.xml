@@ -10,7 +10,7 @@
 	<modules>
 		<module>jse-di-archetype</module>
 		<module>jse-di-example</module>
-    <module>teste</module>
+    
   </modules>
 
 	<build>

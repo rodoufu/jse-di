@@ -16,8 +16,11 @@ public class Main {
 		WeldContext.INSTANCE.getBean(Main.class).execute();
 	}
 
+	/**
+	 * Using ApplicationScoped, ThreadScoped and NormalScoped objects.
+	 */
 	private void execute() {
-		System.out.println("Começou");
+		System.out.println("Begin");
 		
 		try {
 			final ExecutorService executor = Executors.newWorkStealingPool();
@@ -30,7 +33,7 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		System.out.println("Terminou");
+		System.out.println("End");
 	}
 
 }

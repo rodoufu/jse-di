@@ -10,7 +10,7 @@ import org.mockito.Mock;
 import ${groupId}.cdi.CdiMockitoRunner;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple project.
  */
 @RunWith(CdiMockitoRunner.class)
 public class MainTest {
