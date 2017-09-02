@@ -1,4 +1,4 @@
-package $pom.cdi;
+package ${groupId}.cdi;
 
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;

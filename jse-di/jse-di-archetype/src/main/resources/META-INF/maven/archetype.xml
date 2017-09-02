@@ -7,12 +7,30 @@
 	<allowPartial>true</allowPartial>
 
 	<sources>
-		<source>src/main/java/App.java</source>
-		<source>src/main/java/TransactionInterceptor.java</source>
-		<source>src/main/java/WeldContext.java</source>
+		<source>src/main/java/Main.java</source>
+
+		<source>src/main/java/cdi/CdiMockitoRunner.java</source>
+		<source>src/main/java/cdi/TransactionInterceptor.java</source>
+		<source>src/main/java/cdi/WeldContext.java</source>
+
+		<source>src/main/java/cdi/factory/EntityManagerFactoryProducer.java
+		</source>
+		<source>src/main/java/cdi/factory/EntityManagerProducer.java</source>
+		<source>src/main/java/cdi/factory/LoggerProducer.java</source>
 	</sources>
 
+	<resources>
+		<resource>src/main/resources/log4j.properties</resource>
+
+		<resource>src/main/resources/META-INF/beans.xml</resource>
+		<resource>src/main/resources/META-INF/persistence.xml</resource>
+	</resources>
+
 	<testSources>
-		<source>src/test/java/AppTest.java</source>
+		<source>src/test/java/MainTest.java</source>
 	</testSources>
+
+	<testResources>
+		<resource>src/main/resources/META-INF/beans.xml</resource>
+	</testResources>
 </archetype>

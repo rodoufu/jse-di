@@ -1,4 +1,4 @@
-package $pom.cdi;
+package ${groupId}.cdi;
 
 import java.io.Serializable;
 
