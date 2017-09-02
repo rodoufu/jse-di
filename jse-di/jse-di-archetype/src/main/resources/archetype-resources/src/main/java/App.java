@@ -1,4 +1,4 @@
-package $pom;
+package ${groupId};
 
 /**
  * Hello world!
