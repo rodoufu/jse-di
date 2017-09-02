@@ -5,6 +5,7 @@ import javax.inject.Inject;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 
 import ${groupId}.cdi.CdiMockitoRunner;
 
@@ -14,6 +15,7 @@ import ${groupId}.cdi.CdiMockitoRunner;
 @RunWith(CdiMockitoRunner.class)
 public class MainTest {
 	private @Inject Main main;
+	private @Mock Main mainMock;
 
 	/**
 	 * Rigourous Test :-)
@@ -21,6 +23,6 @@ public class MainTest {
 	@Test
 	public void testApp() {
 		Assert.assertNotNull(main);
-		Assert.assertTrue(true);
+		Assert.assertNotNull(mainMock);
 	}
 }

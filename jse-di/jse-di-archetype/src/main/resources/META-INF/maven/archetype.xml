@@ -8,13 +8,13 @@
 
 	<sources>
 		<source>src/main/java/Main.java</source>
+		<source>src/main/java/HelloWorld.java</source>
 
 		<source>src/main/java/cdi/CdiMockitoRunner.java</source>
 		<source>src/main/java/cdi/TransactionInterceptor.java</source>
 		<source>src/main/java/cdi/WeldContext.java</source>
 
-		<source>src/main/java/cdi/factory/EntityManagerFactoryProducer.java
-		</source>
+		<source>src/main/java/cdi/factory/EntityManagerFactoryProducer.java</source>
 		<source>src/main/java/cdi/factory/EntityManagerProducer.java</source>
 		<source>src/main/java/cdi/factory/LoggerProducer.java</source>
 	</sources>
@@ -31,6 +31,7 @@
 	</testSources>
 
 	<testResources>
-		<resource>src/main/resources/META-INF/beans.xml</resource>
+		<resource>src/test/resources/log4j.properties</resource>
+		<resource>src/test/resources/META-INF/beans.xml</resource>
 	</testResources>
 </archetype>
